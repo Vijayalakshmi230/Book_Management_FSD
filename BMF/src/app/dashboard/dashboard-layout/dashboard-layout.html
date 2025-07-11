@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary px-4">
+  <span class="navbar-brand">{{ username }}</span>
+
+  <div class="ms-auto dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" id="settingsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-gear-fill"></i> Settings
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="settingsDropdown">
+      <li><a class="dropdown-item" (click)="logout()">Logout</a></li>
+      <li><a class="dropdown-item" (click)="deleteAccount()">Delete Account</a></li>
+      <li><a class="dropdown-item" (click)="changePassword()">Change Password</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Child pages go here -->
+<router-outlet></router-outlet>
+
+<!-- Dashboard button bottom left -->
+<button class="btn btn-secondary position-fixed bottom-0 start-0 m-3" (click)="goToDashboard()">
+  <i class="bi bi-grid"></i> Dashboard
+</button>

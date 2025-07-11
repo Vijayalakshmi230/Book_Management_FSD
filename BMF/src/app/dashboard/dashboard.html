@@ -1,0 +1,36 @@
+<div class="main-content d-flex justify-content-center align-items-center">
+  <div class="container">
+    <div class="row justify-content-center g-4">
+      <div class="col-md-4">
+        <div class="card text-center shadow-sm h-100">
+          <div class="card-body d-flex flex-column justify-content-center">
+            <h5 class="card-title">Add Book</h5>
+            <button class="btn btn-success mt-3" (click)="navigateToAddBook()">
+              <i class="bi bi-plus-circle"></i> Add New Book
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title">View Books</h5>
+            <button class="btn btn-success mt-3" (click)="navigateToViewBooks()">
+              <i class="bi bi-book"></i> View All Books
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center shadow-sm h-100">
+          <div class="card-body d-flex flex-column justify-content-center">
+            <h5 class="card-title">Update Book</h5>
+            <button class="btn btn-warning mt-3" (click)="navigateToUpdateBook()">
+              <i class="bi bi-pencil-square"></i> Update Book Details
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
